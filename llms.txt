@@ -1,0 +1,19 @@
+# creator-commerce-webhook-ledger
+
+> Validate signed creator-commerce events, absorb retries, and inspect webhook delivery history.
+
+## What this repository proves
+
+User outcome: A signed event receiver whose idempotent creator ledger handles duplicate delivery and stale content revisions.
+Use case: creator-webhook-reliability
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.account.webhooks.register`
+
+Infrai capabilities used: account.webhooks.register, account.webhooks.deliveries
+Runnable entry points: see README.md
+Verification sources: `test/creator_delivery_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

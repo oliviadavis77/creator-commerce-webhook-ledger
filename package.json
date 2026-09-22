@@ -1,0 +1,22 @@
+{
+  "name": "creator-commerce-webhook-ledger",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/creator_delivery_service.ts",
+    "register": "tsx src/webhook_console.ts register",
+    "history": "tsx src/webhook_console.ts history",
+    "demo": "tsx src/demo_checkout_events.ts",
+    "test": "node --import tsx --test test/creator_delivery_service.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
